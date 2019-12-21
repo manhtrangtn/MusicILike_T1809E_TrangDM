@@ -9,6 +9,7 @@ namespace T1809E_UWP_DAPI_D101_TrangDM2.Models
 
     public class Member
     {
+        public long id { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
         public string password { get; set; }

@@ -10,10 +10,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1920">
 
     <Grid>
-        <Image Source="../Assets/bg1.jpg"/>
+        <Image Source="../Assets/bg1.jpg" Margin="116,0,7,0"/>
         <muxc:NavigationView x:ConnectionId='2'  x:Name="nvSample" HorizontalAlignment="Center" Width="1920">
             <muxc:NavigationView.MenuItems>
-                <TextBlock Text="Demo List View and Navigate"/>
                 <muxc:NavigationViewItem x:ConnectionId='3'                            Icon="Permissions" Content="Login" Tag="SamplePage1" />
                 <muxc:NavigationViewItem x:ConnectionId='4'                               Icon="MusicInfo" Content="Song List" Tag="SamplePage2" />
                 <muxc:NavigationViewItem x:ConnectionId='5'                               Icon="Edit" Content="Register" Tag="SamplePage3" />

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using T1809E_UWP_DAPI_D101_TrangDM2.Models;
 
 namespace T1809E_UWP_DAPI_D101_TrangDM2.Utils
 {
@@ -13,7 +14,7 @@ namespace T1809E_UWP_DAPI_D101_TrangDM2.Utils
         private string PhoneRule = "^[+][8][4](09|03|01[2|6|8|9])+([0-9]{8})$";
         public bool IsNotNullAndNotEmpty(string str)
         {
-            return str!=null && !str.Equals("");
+            return !string.IsNullOrEmpty(str);
         }
 
         public bool IsPasswordMatch(string password1, string password2)

@@ -28,72 +28,10 @@ namespace T1809E_UWP_DAPI_D101_TrangDM2
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private int _choosedGender = 2;
-        private String _birthDay;
         public MainPage()
         {
             this.InitializeComponent();
             //getApiAsync();
-        }
-
-        //public async void getApiAsync()
-        //{
-        // // HttpClient client = new HttpClient();
-        //  //string respone = await client.GetStringAsync("https://api.coindesk.com/v1/bpi/currentprice.json");
-        //   //var obj = JsonConvert.DeserializeObject<Bitcoin>(respone);
-        //    //Debug.WriteLine(respone);
-        //}
-
-        //public async HttpResponseMessage Register(Uri uri, Member item)
-        //{
-        //  var json = JsonConvert.SerializeObject(item);
-        //  var content = new StringContent(json);
-        //  content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-        //  HttpClient _client = new HttpClient();
-        //  return await _client.PostAsync(uri, content);
-        //}
-
-        private void Gender_Choose(object sender, RoutedEventArgs e)
-        {
-          var chooseRadioButton = (RadioButton)sender;
-          if (chooseRadioButton == null) return;
-          switch (chooseRadioButton.Tag)
-          {
-            case "Male":
-              _choosedGender = 1;
-              break;
-            case "Female":
-              _choosedGender = 0;
-              break;
-            case "Other":
-              _choosedGender = 2;
-              break;
-          }
-        }
-
-        private void Birthday_OnDateChanged(CalendarDatePicker sender, CalendarDatePickerDateChangedEventArgs args)
-        {
-          if (sender.Date.HasValue)
-          {
-            _birthDay = sender.Date.Value.Date.ToString("yyyy-MM-dd");
-          }
-        }
-
-        private void Submit_OnClick(object sender, RoutedEventArgs e)
-        {
-            Uri uri = new Uri("https://2-dot-backup-server-002.appspot.com/_api/v2/members");
-            var member = new Member();
-            member.firstName = firstName.Text;
-            member.lastName = lastName.Text;
-            member.address = address.Text;
-            member.password = password.Password;
-            member.phone = phone.Text;
-            member.gender = _choosedGender;
-            member.birthday = _birthDay;
-            member.email = email.Text;
-            member.avatar = avatar.Text;
-            //var resp = Register(uri, member);
-            Debug.WriteLine(member.ToString());
         }
     }
 }

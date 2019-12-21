@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using T1809E_UWP_DAPI_D101_TrangDM2.Models;
 using T1809E_UWP_DAPI_D101_TrangDM2.Utils;
@@ -15,7 +16,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using Newtonsoft;
+using Newtonsoft.Json;
+using System.Text;
+using System.Diagnostics;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace T1809E_UWP_DAPI_D101_TrangDM2.Pages
@@ -123,14 +127,19 @@ namespace T1809E_UWP_DAPI_D101_TrangDM2.Pages
             member.avatar = avatar.Text;
             if (check)
             {
-                NotNullAlert.Text = "success";
-            }
-            else
-            {
-                //DO some thing return an error
+                var data = JsonConvert.SerializeObject(member);
+                HttpContent content = new StringContent(data, Encoding.UTF8, "application/json");
+                SubmitDataRegister(content);
             }
         }
 
-
+        private async void SubmitDataRegister(HttpContent content)
+        {
+            var httpClient = new HttpClient();
+            var response = await httpClient.PostAsync("https://2-dot-backup-server-002.appspot.com/_api/v2/members", content);
+            var resp = await response.Content.ReadAsStringAsync();
+            Member member = JsonConvert.DeserializeObject<Member>(resp);
+            Debug.WriteLine(member.id);
+        }
     }
 }
