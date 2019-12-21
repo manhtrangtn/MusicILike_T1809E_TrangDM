@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-12-19T16:52:03.902</Modified>
+      <Modified>2019-12-21T11:22:55.424</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\T1809E_UWP_DAPI_D101_TrangDM2.exe">
       <PackagePath>entrypoint\T1809E_UWP_DAPI_D101_TrangDM2.exe</PackagePath>
-      <Modified>2019-12-19T16:52:03.475</Modified>
+      <Modified>2019-12-21T11:22:54.986</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -98,35 +98,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\T1809E_UWP_DAPI_D101_TrangDM2.xr.xml">
       <PackagePath>T1809E_UWP_DAPI_D101_TrangDM2.xr.xml</PackagePath>
-      <Modified>2019-12-19T16:52:03.251</Modified>
+      <Modified>2019-12-21T11:22:54.771</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-12-19T16:52:03.287</Modified>
+      <Modified>2019-12-21T11:22:54.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-12-19T16:52:03.287</Modified>
+      <Modified>2019-12-21T11:22:54.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\Pages\AddSong.xbf">
       <PackagePath>Pages\AddSong.xbf</PackagePath>
-      <Modified>2019-12-19T16:52:03.287</Modified>
+      <Modified>2019-12-21T11:22:54.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\Pages\Home.xbf">
       <PackagePath>Pages\Home.xbf</PackagePath>
-      <Modified>2019-12-19T16:52:03.288</Modified>
+      <Modified>2019-12-21T11:22:54.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\Pages\Login.xbf">
       <PackagePath>Pages\Login.xbf</PackagePath>
-      <Modified>2019-12-19T16:52:03.288</Modified>
+      <Modified>2019-12-21T11:22:54.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\Pages\RegisterPage.xbf">
       <PackagePath>Pages\RegisterPage.xbf</PackagePath>
-      <Modified>2019-12-19T16:52:03.277</Modified>
+      <Modified>2019-12-21T11:22:54.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\Pages\SongList.xbf">
       <PackagePath>Pages\SongList.xbf</PackagePath>
-      <Modified>2019-12-19T16:52:03.287</Modified>
+      <Modified>2019-12-21T11:22:54.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -138,7 +138,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_DAPI_D101_TrangDM2\bin\x86\Debug\Core\T1809E_UWP_DAPI_D101_TrangDM2.exe">
       <PackagePath>T1809E_UWP_DAPI_D101_TrangDM2.exe</PackagePath>
-      <Modified>2019-12-19T16:52:03.896</Modified>
+      <Modified>2019-12-21T11:22:55.418</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
